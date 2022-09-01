@@ -21,7 +21,10 @@ while True:
                 cell_num = check_num(word)
             f.close()
             if len(cell_num) > 0:
-                print(cell_num)
+                cell_num_str = " "
+                for i in cell_num:
+                    print(cell_num_str.join(i))
+                
     n+=1
     if n == 6:
         break   
