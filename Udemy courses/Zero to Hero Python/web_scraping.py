@@ -1,7 +1,9 @@
 import requests
 import bs4
 import os
-
+'''
+Creates folder with images from a wikipidia page in this top level directory
+'''
 
 def createFolder(directory):
     try:
@@ -10,10 +12,7 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
         
-
-# Example
 image_folder = createFolder('./images/')
-# Creates a folder in the current directory called data
 
 result = requests.get("https://en.wikipedia.org/wiki/Animal")
 
